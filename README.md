@@ -27,7 +27,7 @@ Cloud Service : Amazon Web Services <br>
 <br>
 
 ## 🖇️ 요구사항 명세서
-<img src="" width="1000"/>
+<img src="https://github.com/user-attachments/assets/3db112d4-5622-42cc-a470-5d89bdd8ad21" width="1000"/>
 <br>
 
 ## 📌 ERD다이어 그램 & 테이블 정의서
