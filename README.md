@@ -31,7 +31,10 @@ Cloud Service : Amazon Web Services <br>
 <br>
 
 ## 📌 ERD다이어 그램 & 테이블 정의서
-<img src="" width="1000"/>
+[[테이블 정의서 보기]](https://docs.google.com/spreadsheets/d/1pRGr-6jWC95Qof-Y3daB35SteG2AeWJwrXgm1-QNgTY/edit?gid=619662548#gid=619662548)
+<br>
+[ERD]
+<img src="https://github.com/user-attachments/assets/c94e97df-1959-4d80-aed3-bad2770fd4f2" width="1000"/>
 <br>
 
 ## 💫 담당 기능
