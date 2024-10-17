@@ -41,6 +41,16 @@
       th {
       	text-align: center;
       }
+      
+      .status-waiting {
+		  color: black; /* 대기 상태 */
+	  }
+	  .status-accepted {
+	      color: green; /* 수락 상태 */
+	  }
+	  .status-rejected {
+	      color: red; /* 거절 상태 */
+	  }
    </style>
    
    <!-- JQuery -->
@@ -94,11 +104,11 @@
                     <thead>
                       <tr>
                         <th scope="col" style="width: 170px;">봉사 시작 시간</th>
-                        <th scope="col" style="width: 300px;">봉사 내용</th>
-                        <th scope="col">신청자 ID</th>
-                        <th scope="col">신청 인원</th>
+                        <th scope="col" style="width: 340px;">봉사 내용</th>
+                        <th scope="col" style="width: 80px;">신청자 ID</th>
+                        <th scope="col" style="width: 80px;">신청 인원</th>
                         <th scope="col" style="width: 300px;">신청 내용</th>
-                        <th scope="col">상태</th>
+                        <th scope="col" style="width: 80px;">상태</th>
                       </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -321,13 +331,24 @@
                  	// response 데이터만큼 리스트 생성
                     if (response && response.list) {
                         response.list.forEach(function(item) {
-                            let row = '<tr class="clickable-row" data-vol-app-no="' + item.volAppNo + '">';
+                        	let statusClass = ''; 
+
+                        	console.log(item.volAppState);
+                        	if (item.volAppState == '대기') { // 대기 상태
+                                statusClass = 'status-waiting';
+                            } else if (item.volAppState == '수락') { // 수락 상태
+                                statusClass = 'status-accepted';
+                            } else if (item.volAppState == '거절') { // 거절 상태
+                                statusClass = 'status-rejected';
+                            }
+                        	
+                            let row = '<tr class="clickable-row ' + statusClass + '" data-vol-app-no="' + item.volAppNo + '">';
                             row += '<td scope="row">' + item.volStarttime + '</td>';
                             row += '<td>' + item.volContent + '</td>';
                             row += '<td style="text-align: center;">' + item.gstId + '</td>';
                             row += '<td style="text-align: center;">' + item.volAppPeople + '</td>';
                             row += '<td>' + item.volAppComment + '</td>';
-                            row += '<td style="text-align: center;">' + item.volAppState + '</td>';
+                            row += '<td style="text-align: center;" class="' + statusClass + '">' + item.volAppState + '</td>';
                             row += '</tr>';
 
                             // tbody에 행 추가
