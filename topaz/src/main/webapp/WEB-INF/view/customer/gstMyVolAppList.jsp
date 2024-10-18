@@ -28,9 +28,10 @@
   <!-- Main CSS File -->
   <link href="/topaz/assets/css/main.css" rel="stylesheet">
   <style type="text/css">
-  	th {
-      text-align: center;
-    }
+  	th, td {
+    text-align: center; /* 수평 중앙 정렬 */
+    vertical-align: middle; /* 수직 중앙 정렬 */
+  }
   </style>
 </head>
 
@@ -58,18 +59,18 @@
 
       <div class="container" data-aos="fade">
 
-        <div class="row justify-content-center gy-5 gx-lg-5">
-          <div class="col-10">
+        <div class="row justify-content-center">
+          <div class="col-12">
           <!-- 봉사 신청 정보 리스트 -->
           <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col" style="width: 170px;">봉사 일시</th>
-                  <th scope="col" style="width: 300px;">봉사 내용</th>
-                  <th scope="col">신청 인원</th>
-                  <th scope="col" style="width: 300px;">신청 내용</th>
-                  <th scope="col">신청 상태</th>
-                  <th scope="col"></th>
+                  <th scope="col" style="width: 15%;">봉사 일시</th>
+                  <th scope="col" style="width: 30%;;">봉사 내용</th>
+                  <th scope="col" style="width: 25%;">신청 내용</th>
+                  <th scope="col" style="width: 7%;">신청 인원</th>
+                  <th scope="col" style="width: 7%;">신청 상태</th>
+                  <th scope="col" style="width: 7%;"></th>
                 </tr>
               </thead>
               <tbody id="tableBody">
@@ -123,10 +124,10 @@
         	  response.forEach(function(item) {
                   let row = '<tr data-vol-app-no="' + item.volAppNo + '" data-vol-no="'+ item.volNo + '">';
                   row += '<td scope="row">' + item.volStartTime + ' - ' + item.volEndTime + '</td>';
-                  row += '<td>' + item.volContent + '</td>';
-                  row += '<td style="text-align: center;">' + item.volAppPeople + '</td>';
-                  row += '<td style="text-align: center;">' + item.volAppComment + '</td>';
-                  row += '<td style="text-align: center;">' + item.volAppState + '</td>';
+                  row += '<td style="text-align: left; padding-left: 30px; padding-right: 30px;">' + item.volContent + '</td>';
+                  row += '<td style="text-align: left;">' + item.volAppComment + '</td>';
+                  row += '<td>' + item.volAppPeople + '</td>';
+                  row += '<td>' + item.volAppState + '</td>';
                   
                	  // 신청 상태가 '대기'일 때에만 취소버튼 활성화
                   let buttonClass = 'btn-secondary';

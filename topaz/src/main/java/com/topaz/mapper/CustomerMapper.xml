@@ -106,7 +106,7 @@
 			v.vol_content volContent,
 			v.vol_people volPeople,
 			DATE_FORMAT(v.vol_starttime, '%Y-%m-%d %H:%i') volStartTime, 
-			DATE_FORMAT(v.vol_endtime, '%Y-%m-%d %H:%i') volEndTime, 
+			DATE_FORMAT(v.vol_endtime, '%H:%i') volEndTime, 
 			va.vol_app_no volAppNo, 
 			va.vol_no volNo,
 			va.gst_id gstId, 
