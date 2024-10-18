@@ -103,12 +103,11 @@
                 <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th scope="col" style="width: 170px;">봉사 시작 시간</th>
-                        <th scope="col" style="width: 340px;">봉사 내용</th>
-                        <th scope="col" style="width: 80px;">신청자 ID</th>
-                        <th scope="col" style="width: 80px;">신청 인원</th>
-                        <th scope="col" style="width: 300px;">신청 내용</th>
-                        <th scope="col" style="width: 80px;">상태</th>
+                        <th scope="col" style="width: 200px; padding-left: 30px;">봉사 시작 시간</th>
+                        <th scope="col" style="width: 600px;">봉사 내용</th>
+                        <th scope="col" >신청자 ID</th>
+                        <th scope="col" >신청 인원</th>
+                        <th scope="col" >상태</th>
                       </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -246,8 +245,8 @@
                 paginationUl.append('<li class="page-item"><a class="page-link bpoListPage" href="#" data-page="' + i + '">' + i + '</a></li>');
             }
         }
-         
-        // 마지막 페이지로 이동하는 버튼 추가(마지막 페이징ㄹ경우 비활성화)
+        
+        // 마지막 페이지로 이동하는 버튼 추가(마지막 페이징 경우 비활성화)
         if (currentPage === lastPage) {
             paginationUl.append('<li class="page-item disabled"><span class="page-link">&raquo;</span></li>');
         } else {
@@ -343,11 +342,10 @@
                             }
                         	
                             let row = '<tr class="clickable-row ' + statusClass + '" data-vol-app-no="' + item.volAppNo + '">';
-                            row += '<td scope="row">' + item.volStarttime + '</td>';
-                            row += '<td>' + item.volContent + '</td>';
+                            row += '<td scope="row" style="text-align: center; padding-left: 30px;">' + item.volStarttime + '</td>';
+                            row += '<td style="padding-left: 50px;">' + item.volContent + '</td>';
                             row += '<td style="text-align: center;">' + item.gstId + '</td>';
                             row += '<td style="text-align: center;">' + item.volAppPeople + '</td>';
-                            row += '<td>' + item.volAppComment + '</td>';
                             row += '<td style="text-align: center;" class="' + statusClass + '">' + item.volAppState + '</td>';
                             row += '</tr>';
 

@@ -44,7 +44,7 @@ public class VolunteerRestController {
 	 */
 	@GetMapping("/volunteer/volunteerList")
 	public Map<String, Object> volunteerAppList(@RequestParam(name="currentPage", defaultValue="1") int currentPage,
-											@RequestParam(name="rowPerPage", defaultValue="5") int rowPerPage,
+											@RequestParam(name="rowPerPage", defaultValue="10") int rowPerPage,
 											@RequestParam(name="searchDate", defaultValue="") String searchDate,
 											@RequestParam(name="searchWord", defaultValue="") String searchWord ){
 		// 매개값 디버깅
