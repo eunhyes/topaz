@@ -16,6 +16,7 @@ WAS : Apache Tomcat 10 <br>
 IDE : STS4 <br>
 Cloud Service : Amazon Web Services <br>
 버전관리 : GitHub <br>
+<br>
 
 ## 2. 팀원 구성
 - 김인수 ([@Guinsu](https://github.com/Guinsu))
@@ -73,15 +74,42 @@ Cloud Service : Amazon Web Services <br>
 ![TOPAZ_봉사신청관리](https://github.com/user-attachments/assets/29ee0ebe-ec30-4abc-adbc-aa59655352ae)
 
 <br>
-<br>
+
+-----
 
 ### [고객 페이지] <br>
-- **회원가입** : 구글 SMTP와 Spring Mail 라이브러리를 활용한 이메일 인증, 다음 카카오 주소 API 사용<br>
-- **마이페이지** : 입력한 정보 확인 및 수정, 비밀번호 변경 기능 구현<br>
-- **비밀번호 찾기** : 임시 비밀번호 발급 및 비밀번호 변경 기능 구현<br>
-- **봉사 신청** : 그룹웨어에서 등록된 봉사 일정을 조회하고 신청, 수용 인원 초과 시 신청 불가 기능<br>
+**1. 회원가입**
+- ID 중복 검사, 이메일 인증번호 모두 확인 후 회원가입 버튼 활성화
+- 이메일 인증 기능 구현
+  - 구글 SMTP, Spring Mail 라이브러리 활용
+- 다음 카카오 주소 API 사용<br><br>
+![TOPAZ_고객회원가입](https://github.com/user-attachments/assets/6a917087-6212-40bb-9e3f-fc55f5615034)
 
+<br>
 
+**2. 마이페이지**
+- 회원가입 시 입력했던 정보 조회 및 수정
+  - REST API와 AJAX 활용 
+- 비밀번호 변경 기능 구현
+- 회원 탈퇴 기능 구현 <br><br>
+![TOPAZ_고객마이페이지](https://github.com/user-attachments/assets/f2c598d2-8e82-4b5e-8a74-26ba41aee2be)
+
+<br>
+
+**3. 비밀번호 찾기**
+- 랜덤 문자열로 임시 비밀번호 생성 및 변경 기능 구현<br><br>
+![TOPAZ_고객비밀번호찾기](https://github.com/user-attachments/assets/7b30c54d-dc25-4d7f-b794-7ea41292e90c)
+
+<br>
+
+**4. 봉사 신청**
+- Full Calendar API를 사용하여 그룹웨어에서 등록한 봉사 일정을 조회
+- 봉사 일정 클릭 시 해당 봉사 상세 페이지로 이동
+  - 신청 버튼 클릭 시 신청 모달 팝업창 활성화
+  - 수용 인원 초과 시 신청 불가 기능 구현<br><br>
+![TOPAZ_고객봉사신청](https://github.com/user-attachments/assets/f954805a-b009-4f60-8e75-7adcf15b31bf)
+
+<br><br><br>
 
 
 
