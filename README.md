@@ -6,16 +6,20 @@
 - 개발 기간 : 2024.06.24 ~ 2024.07.26 (5주)
 - [시연 영상 보기](https://youtu.be/wenoEmmYZUw?si=iSa2XPZMTfCxJINv)
 - 개발 환경 <br>
-OS : Mac OS <br>
-Back-end : Java11 <br> 
-Front-end : HTML5, CSS3, BootStrap, JavaScript <br>
-Framework : Spring, Mybatis <br>
-Library : JQuery, JSTL, Lombok <br>
-Database : MariaDB <br>
-WAS : Apache Tomcat 10 <br>
-IDE : STS4 <br>
-Cloud Service : Amazon Web Services <br>
-버전관리 : GitHub <br>
+
+| Category     | Tools/Technologies            |
+|:----------------|:-------------------------------|
+| OS             | Mac OS                         |
+| Back-end       | Java11                         |
+| Front-end      | HTML5, CSS3, BootStrap, JavaScript |
+| Framework      | Spring, Mybatis                |
+| Library        | JQuery, JSTL, Lombok           |
+| Database       | MariaDB                        |
+| WAS            | Apache Tomcat 10               |
+| IDE            | STS4                           |
+| Cloud Service  | Amazon Web Services            |
+| Version Control| GitHub                         |
+
 <br>
 
 ## 2. 팀원 구성
