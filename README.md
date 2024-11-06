@@ -22,14 +22,10 @@
 <br>
 
 ## 2. 팀원 구성 및 담당 기능
-- 김인수 ([@Guinsu](https://github.com/Guinsu))<br>
- [그룹웨어] 직원 관리, 마이페이지, 쪽지, 공지사항
-- 박수지 ([@SSUJIJI](https://github.com/SSUJIJI))<br>
- [그룹웨어] 입주자 관리, 객실 관리, [고객페이지] 알림마당
-- 박혜아 ([@hyeah0526](https://github.com/hyeah0526))<br>
- [그룹웨어] 외주업체 관리, 사내 일정 관리, 전자결재(신규 결재, 상세)
-- 한은혜 ([@eunhyes](https://github.com/eunhyes)) <br>
- [그룹웨어] 로그인, 전자결재(결재함), 봉사 관리, [고객페이지] 회원가입, 마이페이지, 봉사 신청
+- 김인수 ([@Guinsu](https://github.com/Guinsu)) : 직원 관리, 마이페이지, 쪽지, 공지사항 <br>
+- 박수지 ([@SSUJIJI](https://github.com/SSUJIJI)) : 입주자 관리, 객실 관리, 알림마당 <br>
+- 박혜아 ([@hyeah0526](https://github.com/hyeah0526)) : 외주업체 관리, 사내 일정 관리, 전자결재 - 신규결재, 결재상세 <br>
+- 한은혜 ([@eunhyes](https://github.com/eunhyes)) : 로그인, 전자결재 - 결재함, 봉사 관리, 회원가입, 마이페이지, 봉사 신청
 <br>
 
 ## 3. 요구사항명세서
